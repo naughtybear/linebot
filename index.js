@@ -34,7 +34,7 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
 
-  var   ;
+  var outdata;
   var client = net.connect(992, '140.123.97.126', function () {
     console.log('client端：向 server端 請求連線')
     })
