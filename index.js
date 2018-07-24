@@ -34,7 +34,7 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
 
-  var outdata;
+  var   ;
   var client = net.connect(992, '140.123.97.126', function () {
     console.log('client端：向 server端 請求連線')
     })
@@ -56,7 +56,7 @@ function handleEvent(event) {
     //結束 client 端 連線
     client.end()
     })
-
+  console.log(outdata);
   // create a echoing text message
   const echo = { type: 'text', text: outdata };
   console.log(echo);
