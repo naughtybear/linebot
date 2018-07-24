@@ -46,7 +46,7 @@ function handleEvent(event) {
 
   // write event: 傳輸資料的事件
   net_client.write(event.message.text, function () {
-    console.log('client端：開始傳輸資料，傳輸的資料為 你好!')
+    console.log('client端：開始傳輸資料，傳輸的資料為 '+event.message.text)
     })
   
   // data event： 到收到資料傳輸時觸發事件 ， argument 為對象傳輸的物件
@@ -61,7 +61,7 @@ function handleEvent(event) {
   // create a echoing text message
   //const echo = { type: 'text', text: outdata };
   //console.log(echo);
-  // use reply API
+  // use reply API  
   //return client.replyMessage(event.replyToken, echo);
 }
 
