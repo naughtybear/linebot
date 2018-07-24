@@ -35,26 +35,26 @@ function handleEvent(event) {
   }
 
   //var outdata;
-  var client = net.connect(992, '140.123.97.126', function () {
+  var net_client = net.connect(992, '140.123.97.126', function () {
     console.log('client端：向 server端 請求連線')
     })
 
   // connect event : 與 server端 連線成功時的事件
-  client.on('connect', function (data) {
+  net_client.on('connect', function (data) {
     console.log('client端：與 server端 連線成功，可以開始傳輸資料')
     })
 
   // write event: 傳輸資料的事件
-  client.write(event.message.text, function () {
+  net_client.write(event.message.text, function () {
     console.log('client端：開始傳輸資料，傳輸的資料為 你好!')
     })
   
   // data event： 到收到資料傳輸時觸發事件 ， argument 為對象傳輸的物件
-  client.on('data', function (data) {
+  net_client.on('data', function (data) {
     console.log('client端：收到 server端 傳輸資料為 ' + data.toString())
     echo = { type: 'text', text: data.toString() };
     //結束 client 端 連線
-    client.end()
+    net_client.end()
     //return client.replyMessage(event.replyToken, echo);
     })
   //console.log(outdata);
