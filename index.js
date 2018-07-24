@@ -34,7 +34,7 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
 
-  var outdata;
+  //var outdata;
   var client = net.connect(992, '140.123.97.126', function () {
     console.log('client端：向 server端 請求連線')
     })
@@ -52,16 +52,17 @@ function handleEvent(event) {
   // data event： 到收到資料傳輸時觸發事件 ， argument 為對象傳輸的物件
   client.on('data', function (data) {
     console.log('client端：收到 server端 傳輸資料為 ' + data.toString())
-    outdata=data.toString()
+    const echo = { type: 'text', text: data.toString() };
     //結束 client 端 連線
     client.end()
+    return client.replyMessage(event.replyToken, echo);
     })
-  console.log(outdata);
+  //console.log(outdata);
   // create a echoing text message
-  const echo = { type: 'text', text: outdata };
-  console.log(echo);
+  //const echo = { type: 'text', text: outdata };
+  //console.log(echo);
   // use reply API
-  return client.replyMessage(event.replyToken, echo);
+  //return client.replyMessage(event.replyToken, echo);
 }
 
 // listen on port
