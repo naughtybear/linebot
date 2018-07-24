@@ -52,9 +52,7 @@ function handleEvent(event) {
   // data event： 到收到資料傳輸時觸發事件 ， argument 為對象傳輸的物件
   net_client.on('data', function (data) {
     console.log('client端：收到 server端 傳輸資料為 ' + data.toString())
-    str=data.toString();
-    str.replace(/\r\n|\n/g,"");
-    echo = { type: 'text', text: str };
+    echo = { type: 'text', text: data.toString() };
     //結束 client 端 連線
     net_client.end()
     return client.replyMessage(event.replyToken, echo);
