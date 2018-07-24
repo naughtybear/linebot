@@ -55,14 +55,14 @@ function handleEvent(event) {
     echo = { type: 'text', text: data.toString() };
     //結束 client 端 連線
     net_client.end()
-    //return client.replyMessage(event.replyToken, echo);
+    return client.replyMessage(event.replyToken, echo);
     })
   //console.log(outdata);
   // create a echoing text message
   //const echo = { type: 'text', text: outdata };
   //console.log(echo);
   // use reply API
-  return client.replyMessage(event.replyToken, echo);
+  //return client.replyMessage(event.replyToken, echo);
 }
 
 // listen on port
