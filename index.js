@@ -59,7 +59,7 @@ function handleEvent(event) {
 
   // create a echoing text message
   const echo = { type: 'text', text: outdata };
-
+  console.log(echo);
   // use reply API
   return client.replyMessage(event.replyToken, echo);
 }
