@@ -2,7 +2,7 @@ const line = require('@line/bot-sdk');
 const express = require('express');
 var net=require('net');
 
-// create LINE SDK config from env variables
+// create LINE SDK config from env variabless
 const config = {
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
   channelSecret: process.env.CHANNEL_SECRET,
