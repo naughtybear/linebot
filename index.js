@@ -53,8 +53,10 @@ function handleEvent(event) {
   net_client.on('data', function (data) {
     console.log('client端：收到 server端 傳輸資料為 ' + data.toString())
     var message = data.toString();
-    var answer = message.substring(message.length-2)
-    console.log('activate:'+answer);
+    var answer=message.substring(0,message.length-3)
+    var activate = message.substring(message.length-2)
+    console.log('answer:'+answer);
+    console.log('activate:'+activate);
     //create message
     echo = { type: 'text', text: data.toString() };
     //結束 client 端 連線
