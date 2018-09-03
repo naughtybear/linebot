@@ -13,7 +13,7 @@ module.exports = {
                     "packageId": "13",
                     "stickerId": "1"
                   };
-            case '三':
+            case "三\n":
                 return {
                     "type": "sticker",
                     "packageId": "179",
