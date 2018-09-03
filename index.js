@@ -66,10 +66,9 @@ function handleEvent(event) {
     //use reply api
     console.log('source type:'+event.source.type);
     return client.replyMessage(event.replyToken, echo)
-                      .then(function() {
+                      /*.then(function() {
                         return client.pushMessage(event.source.userID, act);
-                      })
-                      . catch(error => { console.log('caught', err.message); });
+                      })*/;
     })
 }
 
