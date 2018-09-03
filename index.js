@@ -1,6 +1,7 @@
 const line = require('@line/bot-sdk');
 const express = require('express');
 var net=require('net');
+var res=require('./res_type.js')
 
 // create LINE SDK config from env variabless
 const config = {
@@ -54,15 +55,19 @@ function handleEvent(event) {
     console.log('client端：收到 server端 傳輸資料為 ' + data.toString())
     var message = data.toString();
     var answer=message.substring(0,message.length-3)
-    var activate = message.substring(message.length-2)
+    var act_num = message.substring(message.length-2)
     console.log('answer:'+answer);
-    console.log('activate:'+activate);
+    console.log('activate:'+act_num);
     //create message
-    echo = { type: 'text', text: data.toString() };
+    echo = { type: 'text', text: answer };
+    var act = res.def_act(act_num);
     //結束 client 端 連線
     net_client.end()
     //use reply api
-    return client.replyMessage(event.replyToken, echo);
+    return client.replyMessage(event.replyToken, echo)
+                      .then(function() {
+                        return client.pushMessage(event.source.userID, act);
+                      });
     })
 }
 
