@@ -64,7 +64,7 @@ function handleEvent(event) {
     //結束 client 端 連線
     net_client.end()
     //use reply api
-    console.log('source type:'+event.source.type);
+    console.log('source type:'+event.source.userId);
     console.log('act:'+JSON.stringify(act));
     return client.replyMessage(event.replyToken, echo)
                       .then(function() {
