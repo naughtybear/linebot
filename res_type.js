@@ -4,44 +4,44 @@ module.exports = {
             case '一':
                 return {
                     "type": "sticker",
-                    "packageId": "41",
-                    "stickerId": "2"
+                    "packageId": "2",
+                    "stickerId": "41"
                   };
             case '二':
                 return {
                     "type": "sticker",
-                    "packageId": "13",
-                    "stickerId": "1"
+                    "packageId": "1",
+                    "stickerId": "13"
                   };
             case "三\n":
-                return ({
+                return {
                     "type": "sticker",
-                    "packageId": "179",
-                    "stickerId": "2"
-                  });
+                    "packageId": "2",
+                    "stickerId": "179"
+                  };
             case '四':
                 return {
                     "type": "sticker",
-                    "packageId": "149",
-                    "stickerId": "2"
+                    "packageId": "2",
+                    "stickerId": "149"
                   };
             case '五':
                 return {
                     "type": "sticker",
-                    "packageId": "19",
-                    "stickerId": "2"
+                    "packageId": "2",
+                    "stickerId": "19"
                   };
             case '六':
                 return {
                     "type": "sticker",
-                    "packageId": "153",
-                    "stickerId": "2"
+                    "packageId": "2",
+                    "stickerId": "153"
                   };
             case '七':
                 return {
                     "type": "sticker",
-                    "packageId": "38",
-                    "stickerId": "2"
+                    "packageId": "2",
+                    "stickerId": "38"
                   };
             case '八':
                 return {
