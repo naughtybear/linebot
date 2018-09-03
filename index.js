@@ -67,9 +67,9 @@ function handleEvent(event) {
     console.log('source type:'+event.source.type);
     return client.replyMessage(event.replyToken, echo)
                       .then(function() {
-                        return client.pushMessage(event.source.userID, act);
+                        return client.pushMessage(event.source.userId, act);
                       })
-                      . catch(console.log('caught error'));
+                      /*. catch(console.log('caught error'))*/;
     })
 }
 
