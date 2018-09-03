@@ -60,7 +60,7 @@ function handleEvent(event) {
     console.log('activate:'+act_num);
     //create message
     echo = { type: 'text', text: answer };
-    var act = res.def_act(act_num);
+     act = res.def_act(act_num);
     //結束 client 端 連線
     net_client.end()
     //use reply api
