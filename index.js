@@ -359,8 +359,8 @@ function handleSticker(message, replyToken) {
     replyToken,
     {
       type: 'sticker',
-      packageId: message.packageId,
-      stickerId: message.stickerId,
+      packageId: 41,
+      stickerId: 2,
     }
   );
 }
