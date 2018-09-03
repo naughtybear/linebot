@@ -6,11 +6,6 @@ const lineConfig = {
 };
 const client = new line.Client(lineConfig);
 const app = express();
-
-app.listen(3000, function() {
-    console.log('App now running on port', this.address().port);
-  });
-
 app.post('/', line.middleware(lineConfig), function(req, res) {
     Promise
       .all(req.body.events.map(handleEvent))
