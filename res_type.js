@@ -45,6 +45,9 @@ module.exports = {
                   };
             case "三\n":
                 return {
+                  "type": "flex",
+                  "altText": "this is a flex message",
+                  "contents": {
                     "type": "bubble",
                     "hero": {
                       "type": "image",
@@ -203,9 +206,13 @@ module.exports = {
                       ],
                       "flex": 0
                     }
+                  }
                   };
             case "四\n":
                 return {
+                    "type": "flex",
+                    "altText": "this is a flex message",
+                    "contents": {
                     "type": "bubble",
                     "hero": {
                       "type": "image",
@@ -336,6 +343,7 @@ module.exports = {
                         }
                       ]
                     }
+                  }
                   };
             default:
                   return 0;
