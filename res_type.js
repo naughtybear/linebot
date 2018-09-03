@@ -1,13 +1,13 @@
 module.exports = {
     def_act:function(act_num){
         switch(act_num) {
-            case '一':
+            case "一\n":
                 return {
                     "type": "sticker",
                     "packageId": "2",
                     "stickerId": "41"
                   };
-            case '二':
+            case "二\n":
                 return {
                     "type": "sticker",
                     "packageId": "1",
@@ -19,31 +19,31 @@ module.exports = {
                     "packageId": "2",
                     "stickerId": "179"
                   };
-            case '四':
+            case "四\n":
                 return {
                     "type": "sticker",
                     "packageId": "2",
                     "stickerId": "149"
                   };
-            case '五':
+            case "五\n":
                 return {
                     "type": "sticker",
                     "packageId": "2",
                     "stickerId": "19"
                   };
-            case '六':
+            case "六\n":
                 return {
                     "type": "sticker",
                     "packageId": "2",
                     "stickerId": "153"
                   };
-            case '七':
+            case "七\n":
                 return {
                     "type": "sticker",
                     "packageId": "2",
                     "stickerId": "38"
                   };
-            case '八':
+            case "八\n":
                 return {
                     "type": "bubble",
                     "hero": {
@@ -204,7 +204,7 @@ module.exports = {
                       "flex": 0
                     }
                   };
-            case '九':
+            case "九\n":
                 return {
                     "type": "bubble",
                     "hero": {
