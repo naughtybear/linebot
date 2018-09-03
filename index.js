@@ -68,7 +68,9 @@ function handleEvent(event) {
     console.log('act:'+JSON.stringify(act));
     return client.replyMessage(event.replyToken, echo)
                       .then(function() {
-                        return client.pushMessage(event.source.userId, act);
+                        if(acy!=0){
+                          return client.pushMessage(event.source.userId, act);
+                        }
                       })
                       . catch(function (error){console.log('error:'+error);});
     })
