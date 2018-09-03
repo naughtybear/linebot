@@ -36,9 +36,9 @@ function handleEvent(event) {
       switch (source.type) {
         case 'user':
           return client.replyMessage(event.replyToken, {
-            "type": "sticker",
-                    "packageId": "41",
-                    "stickerId": "2"
+            type: 'sticker',
+                    packageId: '41',
+                    stickerId: '2'
           }).then(function() {
             return client.pushMessage(source.userId, {
               type: 'text',
