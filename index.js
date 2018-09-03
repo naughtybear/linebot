@@ -68,7 +68,8 @@ function handleEvent(event) {
     return client.replyMessage(event.replyToken, echo)
                       .then(function() {
                         return client.pushMessage(event.source.userID, act);
-                      });
+                      })
+                      . catch(error => { console.log('caught', err.message); });
     })
 }
 
