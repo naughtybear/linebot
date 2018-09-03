@@ -14,11 +14,11 @@ module.exports = {
                     "stickerId": "1"
                   };
             case "三\n":
-                return {
+                return ({
                     "type": "sticker",
                     "packageId": "179",
                     "stickerId": "2"
-                  };
+                  });
             case '四':
                 return {
                     "type": "sticker",

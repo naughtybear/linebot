@@ -65,7 +65,7 @@ function handleEvent(event) {
     net_client.end()
     //use reply api
     console.log('source type:'+event.source.type);
-    console.log('act:'+act);
+    console.log('act:'+JSON.stringify(act));
     return client.replyMessage(event.replyToken, echo)
                       .then(function() {
                         return client.pushMessage(event.source.userId, act);
