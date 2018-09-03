@@ -70,7 +70,7 @@ function handleEvent(event) {
                       .then(function() {
                         return client.pushMessage(event.source.userId, act);
                       })
-                      . catch(console.log('caught error'));
+                      . catch(function (error){console.log('error:'+error);});
     })
 }
 
