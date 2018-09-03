@@ -355,12 +355,14 @@ function handleLocation(message, replyToken) {
 }
 
 function handleSticker(message, replyToken) {
+  console.log(message.packageId);
+  console.log(message.stickerId);
   return client.replyMessage(
     replyToken,
     {
       type: 'sticker',
-      packageId: 41,
-      stickerId: 2,
+      packageId: message.packageId,
+      stickerId: message.stickerId,
     }
   );
 }
