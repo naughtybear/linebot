@@ -186,7 +186,7 @@ module.exports = {
                           "action": {
                             "type": "uri",
                             "label": "Call",
-                            "uri": "https://linecorp.com"
+                            "uri": "052720860"
                           }
                         },
                         {
