@@ -152,7 +152,7 @@ module.exports = {
                                 },
                                 {
                                   "type": "text",
-                                  "text": "10:00 - 23:00",
+                                  "text": "11:00 - 16:00",
                                   "wrap": true,
                                   "color": "#666666",
                                   "size": "sm",
@@ -176,7 +176,7 @@ module.exports = {
                           "action": {
                             "type": "uri",
                             "label": "Reservation",
-                            "uri": "https://linecorp.com"
+                            "uri": "https://cloudcoffee-e23cb.firebaseapp.com/"
                           }
                         },
                         {
@@ -196,7 +196,7 @@ module.exports = {
                           "action": {
                             "type": "uri",
                             "label": "WEBSITE",
-                            "uri": "https://linecorp.com"
+                            "uri": "https://cloudcoffee-e23cb.firebaseapp.com/"
                           }
                         },
                         {
@@ -222,7 +222,7 @@ module.exports = {
                       "aspectMode": "cover",
                       "action": {
                         "type": "uri",
-                        "uri": "https://linecorp.com"
+                        "uri": "052720860"
                       }
                     },
                     "body": {
@@ -328,7 +328,7 @@ module.exports = {
                           "action": {
                             "type": "uri",
                             "label": "Full Menu",
-                            "uri": "https://linecorp.com"
+                            "uri": "https://cloudcoffee-e23cb.firebaseapp.com/"
                          }
                         },
                         {
@@ -338,7 +338,7 @@ module.exports = {
                           "action": {
                             "type": "uri",
                             "label": "Order",
-                            "uri": "https://linecorp.com"
+                            "uri": ""
                          }
                         }
                       ]
