@@ -186,7 +186,8 @@ module.exports = {
                           "action": {
                             "type": "uri",
                             "label": "Call",
-                            "uri": "https://cloudcoffee-e23cb.firebaseapp.com/"
+                            "uri": "https://cloudcoffee-e23cb.firebaseapp.com/
+"
                           }
                         },
                         {
@@ -338,7 +339,7 @@ module.exports = {
                           "action": {
                             "type": "uri",
                             "label": "Order",
-                            "uri": ""
+                            "uri": "https://cloudcoffee-e23cb.firebaseapp.com/cart"
                          }
                         }
                       ]
