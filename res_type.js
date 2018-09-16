@@ -186,7 +186,7 @@ module.exports = {
                           "action": {
                             "type": "uri",
                             "label": "Call",
-                            "uri": "052720860"
+                            "uri": "https://cloudcoffee-e23cb.firebaseapp.com/"
                           }
                         },
                         {
