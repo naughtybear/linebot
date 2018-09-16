@@ -339,7 +339,7 @@ module.exports = {
                           "action": {
                             "type": "uri",
                             "label": "Order",
-                            "uri": "https://cloudcoffee-e23cb.firebaseapp.com/cart"
+                            "uri": "https://linecorp.com"
                          }
                         }
                       ]
