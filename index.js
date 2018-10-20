@@ -55,7 +55,7 @@ function handleEvent(event) {
     console.log('client端：收到 server端 傳輸資料為 ' + data.toString())
     var message = data.toString();
     var answer=message.substring(0,message.length-3)
-    var act_num = message.substring(message.length-3)
+    var act_num = message.substring(message.length-2)
     console.log('answer:'+answer);
     console.log('activate:'+act_num);
     //create message
